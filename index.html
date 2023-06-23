@@ -22,17 +22,16 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="card">
-            <div class="card-header">
-              BÀI TẬP JS BUỔI 7-8
-            </div>
+            <div class="card-header">BÀI TẬP JS BUỔI 7-8</div>
             <div class="card-body">
               <div class="form-group">
                 <div>
-                  <label>NHẬP VÀO MỘT SỐ BẤT KÌ</label>
+                  <label>NHẬP VÀO MỘT SỐ</label>
                   <input
                     type="number"
                     id="giaTriNhapVao"
                     class="form-control"
+                    placeholder="Nhập vào một số"
                     aria-describedby="helpId"
                   />
                 </div>
@@ -44,43 +43,184 @@
                 >
                   NHẬP SỐ
                 </button>
+                <br />
+                <br />
+                <div id="danhSachGiaTri"></div>
+                <hr />
+                <br />
+                <!-- -------------------------- -->
                 <button
                   class="btn btn-secondary"
                   id="tongCacSoDuong"
                   onclick="tongCacSoDuong()"
                 >
-                  TỔNG CÁC SỐ DƯƠNG
+                  1. TỔNG CÁC SỐ DƯƠNG
                 </button>
+                <br />
+                <br />
+                <div id="tongSoDuong"></div>
+                <hr />
+                <br />
+                <!-- -------------------------- -->
                 <button
                   class="btn btn-primary"
                   id="demCacSoDuong"
                   onclick="demCacSoDuong()"
                 >
-                  ĐẾM CÁC SỐ DƯƠNG
+                  2. ĐẾM CÁC SỐ DƯƠNG
                 </button>
+                <br />
+                <br />
+                <div id="demSoDuong"></div>
+                <hr />
+                <br />
+                <!-- -------------------------- -->
                 <button
                   class="btn btn-warning"
                   id="timSoNhoNhat"
                   onclick="soNhoNhat()"
                 >
-                  SỐ NHỎ NHẤT
+                  3. SỐ NHỎ NHẤT
                 </button>
+                <br />
+                <br />
+                <div id="soNhoNhat"></div>
+                <hr />
+                <br />
+                <!-- -------------------------- -->
                 <button
                   class="btn btn-danger"
                   id="timSoDuongNhoNhat"
                   onclick="soDuongNhoNhat()"
                 >
-                  SỐ NHỎ NHẤT
+                  4. SỐ DƯƠNG NHỎ NHẤT
                 </button>
+                <br />
+                <br />
+                <div id="soDuongNhoNhat"></div>
+                <hr />
+                <br />
+                <!-- -------------------------- -->
+                <button
+                  class="btn btn-info"
+                  id="timSoChanCuoiCung"
+                  onclick="soChanCuoiCung()"
+                >
+                  5. SỐ CHẴN CUỐI CÙNG
+                </button>
+                <br />
+                <br />
+                <div id="soChanCuoiCung"></div>
+                <hr />
+                <br />
+                <!-- -------------------------- -->
+                <label>NHẬP SỐ VỊ TRÍ 1</label>
+                <input
+                  type="number"
+                  id="viTri1"
+                  class="form-control"
+                  placeholder="Vị Trí 1"
+                  aria-describedby="helpId"
+                />
+                <label>NHẬP SỐ VỊ TRÍ 2</label>
+                <input
+                  type="number"
+                  id="viTri2"
+                  class="form-control"
+                  placeholder="Vị Trí 2"
+                  aria-describedby="helpId"
+                />
+                <br />
+                <button
+                  class="btn btn-warning"
+                  id="doiViTri"
+                  onclick="doiViTriSo()"
+                >
+                  6. ĐỔI VỊ TRÍ
+                </button>
+                <br />
+                <br />
+                <div id="doiViTriSo"></div>
+                <hr />
+                <br />
+                <!-- -------------------------- -->
+                <button
+                  class="btn btn-success"
+                  id="tangDan"
+                  onclick="sapXepTangDan()"
+                >
+                  7. SẮP XẾP TĂNG DẦN
+                </button>
+                <br />
+                <br />
+                <div id="sapXepTangDan"></div>
+                <hr />
+                <br />
+                <!-- -------------------------- -->
+                <button
+                  class="btn btn-secondary"
+                  id="soNguyenTo"
+                  onclick="soNguyenToDauTien()"
+                >
+                  8. SỐ NGUYÊN TỐ ĐẦU TIÊN
+                </button>
+                <br />
+                <br />
+                <div id="soNguyenToDauTien"></div>
+                <hr />
+                <br />
+                <!-- -------------------------- -->
+                <div>
+                  <input
+                    type="number"
+                    id="nhapThemSo"
+                    class="form-control"
+                    placeholder="Nhập thêm số vào mảng"
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <br />
+                <button
+                  class="btn btn-success"
+                  id="btnNhapThemSo"
+                  onclick="nhapThemSo()"
+                >
+                  NHẬP THÊM SỐ
+                </button>
+                <br />
+                <br />
+                <div id="giaTriNhapThem"></div>
+                <br>
+                <div id="nhapThemSoVaoMang"></div>
+                <br />
+                <button
+                  class="btn btn-primary"
+                  id="soNguyen"
+                  onclick="baoNhieuSoNguyen()"
+                >
+                  9. ĐẾM SỐ NGUYÊN
+                </button>
+                <br />
+                <br />
+                <div id="baoNhieuSoNguyen"></div>
+                <hr />
+                <br />
+                <!-- -------------------------- -->
+                <button
+                  class="btn btn-danger"
+                  id="soSanh"
+                  onclick="soSanhSoAmDuong()"
+                >
+                  10. SO SÁNH
+                </button>
+                <br />
+                <br />
+                <div id="soSanhSoAmDuong"></div>
+                <!-- -------------------------- -->
               </div>
             </div>
-            <div class="card-footer">
-              <div id="danhSachGiaTri"></div>
-              <div id="tongSoDuong"></div>
-              <div id="demSoDuong"></div>
-              <div id="soNhoNhat"></div>
-              <div id="soDuongNhoNhat"></div>
-            </div>
+            <!-- <div class="card-footer">
+            </div> -->
           </div>
         </div>
       </div>
