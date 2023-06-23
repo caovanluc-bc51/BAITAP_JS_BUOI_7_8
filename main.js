@@ -66,7 +66,7 @@ function soDuongNhoNhat() {
     }
   }
   if (soDuong.length === 0) {
-    document.getElementById("soDuongNhoNhat").innerHTML = "Không Có Số Dương";
+    document.getElementById("soDuongNhoNhat").innerHTML = "Không Có Số Dương Trong Mảng";
     return;
   }
   var soDuongNhoNhat = soDuong[0];
@@ -135,7 +135,7 @@ function sapXepTangDan() {
     }
   }
   document.getElementById("sapXepTangDan").innerHTML =
-    "Danh Sách Số Sau Khi Sắp Xếp Là: " + listNumber;
+    "Danh Sách Giá Trị Sau Khi Sắp Xếp Là: " + listNumber;
 }
 
 //8. SỐ NGUYÊN TỐ ĐẦU TIÊN - DONE
@@ -152,7 +152,7 @@ function soNguyenToDauTien() {
   }
   if (soLonHon1.length === 0) {
     document.getElementById("soNguyenToDauTien").innerHTML =
-      "Không Có Số Nguyên Tố!";
+      -1;
     return;
   }
   var soNguyenToDauTien = [];
@@ -164,7 +164,7 @@ function soNguyenToDauTien() {
   });
   if (soNguyenToDauTien.length === 0) {
     document.getElementById("soNguyenToDauTien").innerHTML =
-      "Không Có Số Nguyên Tố!";
+      -1;
   } else {
     document.getElementById("soNguyenToDauTien").innerHTML =
       "Số Nguyên Tố Đầu Tiên Trong Mảng Là: " + soNguyenToDauTien[0];
@@ -202,8 +202,8 @@ function baoNhieuSoNguyen() {
 function soSanhSoAmDuong() {
   var countAm = 0;
   var countDuong = 0;
-  if(listNumber.length === 0){
-    alert('VUI LÒNG NHẬP VÀO MỘT SỐ BẤT KÌ!');
+  if (listNumber.length === 0) {
+    alert("VUI LÒNG NHẬP VÀO MỘT SỐ BẤT KÌ!");
     return;
   }
   for (var i = 0; i < listNumber.length; i++) {
